@@ -1,6 +1,6 @@
 import React from 'react';
 import { useMutation, gql } from '@apollo/client';
-import { Form, Button, Confirm } from 'semantic-ui-react';
+import { Form, Button } from 'semantic-ui-react';
 
 import { useForm } from '../utils/hooks';
 
