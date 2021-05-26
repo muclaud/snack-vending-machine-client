@@ -26,6 +26,7 @@ function AddAmountButton(props) {
           placeholder='Add amount'
           type='number'
           name='amount'
+          min={1}
           onChange={onChange}
         />
         <button type='submit' className='ui button teal'>

@@ -41,7 +41,15 @@ function SingleCategory(props) {
               <hr />
               <Card.Content extra>
                 <AddAmountButton categoryId={id} />
-                <AddPurcheseButton categoryId={id} name={name} price={price} />
+                {amount > 0 ? (
+                  <AddPurcheseButton
+                    categoryId={id}
+                    name={name}
+                    price={price}
+                  />
+                ) : (
+                  ''
+                )}
               </Card.Content>
             </Card>
             {purchases.map((purchese) => (

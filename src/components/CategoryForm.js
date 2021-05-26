@@ -61,6 +61,7 @@ function AddCategoryForm() {
             placeholder='Category amount'
             name='amount'
             type='number'
+            min={0}
             onChange={onChange}
             value={values.amount}
           />

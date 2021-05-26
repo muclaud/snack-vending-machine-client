@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import DeleteButton from './DeleteButton';
 
 import { Button, Table } from 'semantic-ui-react';
 
@@ -74,8 +75,9 @@ function CategoryTable(props) {
             </Table.Cell>
             <Table.Cell>
               <Button as={Link} to={`/category/${id}`} color='teal'>
-                See details
+                More options
               </Button>
+              {amount > 0 ? '' : <DeleteButton categoryId={id} />}
             </Table.Cell>
           </Table.Row>
         ))}
